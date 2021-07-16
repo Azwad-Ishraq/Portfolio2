@@ -1,0 +1,130 @@
+body{
+   
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    animation-name: transition;
+    animation-duration: .3s;
+}
+/* -------------------header----------------------- */
+header{
+    background-color: #2fc176;
+}
+header img{
+   display: none;
+}
+/* --------------navbar--------------- */
+header nav{
+    display: flex;
+    justify-content: flex-start;
+}
+header ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-start;
+    background-color: #2fc176;
+    width: 100%;
+}
+header ul li{
+    list-style-type: none;
+    padding: 10px;
+    margin: 0px 20px 0px 20px;
+    color: white;
+    cursor: pointer;
+}
+header ul li:hover{
+    /* color: rgb(30, 100, 230); */
+    color: #0e3621;
+}
+/* --------------navbar----------- */
+/* -------------------header----------------------- */
+/* ---------------------about------------------- */
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+.about-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-item h1{
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    animation-name: about-item-h1;
+    animation-duration: 1s;
+}
+.about-item p{
+    font-weight: lighter;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    position: relative;
+    animation-name: about-item-p;
+    animation-duration: 1s;
+}
+.code{
+    height: 200px;
+    width: 441px;
+    position: relative;
+    top: 84px;
+    
+}
+.about-me{
+    background-color: #2fc176;
+    color: white;
+    width: 100%;
+    height: 450px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    top: 75px;
+}
+.about-me h1{
+    font-size: 50px;
+    font-weight: bold;
+
+}
+.about-me p{
+    margin-top: 20px;
+    display: inline-block;
+    width: 27%;
+}
+/* ---------------------about------------------- */
+/* animations */
+@keyframes transition{
+    from{
+        opacity: 0;
+        transform:scale(1.1)
+    }
+    to{
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+}
+@keyframes about-item-h1{
+    from{
+        left: -1198px;
+    }
+    to{
+        left: 0;
+    }
+}
+@keyframes about-item-p{
+    from{
+        right: -1150px;
+    }
+    to{
+        right: 0;
+    }
+}
+
+
+/* animations */

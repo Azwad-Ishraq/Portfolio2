@@ -1,0 +1,47 @@
+@media screen and (max-width:992px) and (min-width:688px) {
+    .about-item h1{
+        font-size: 45px;
+    }
+    .about-item p{
+        word-spacing: 1px;
+        letter-spacing: 1px;
+    }
+    .about-me p{
+        width: 75%;
+    }
+    .about-me h1 {
+        font-size: 35px;
+    }
+    
+}
+@media screen and (max-width:687px) and (min-width:320px) {
+    .about-item h1{
+        font-size: 28px;
+    }
+    .avatar{
+        height: 100px;
+    }
+    .code{
+        width: 247px;
+    }
+    .about-me h1{
+        font-size: 20px;
+    }
+    .about-me p{
+        width: 100%;
+    }
+    .about-item p{
+        letter-spacing: 1px;
+        word-spacing: 1px;
+        font-size: 8px;
+    }
+    header nav{
+        display: none;
+    }
+    header img{
+        display: inline-block;
+    }
+    .code{
+        top: 124px;
+    }
+}
