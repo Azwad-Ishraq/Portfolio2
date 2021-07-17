@@ -118,6 +118,8 @@ header ul li:hover{
 .skills{
     display: flex;
     justify-content: center;
+    margin-bottom: 140px;
+    height: 450px;
 }
 .skill{
     display: flex;
@@ -126,6 +128,7 @@ header ul li:hover{
     background-color: #2fc176;
     width: 60%;
     border-radius: 10px;
+    justify-content: center;
 }
 .skill-items{
     
@@ -139,6 +142,8 @@ header ul li:hover{
     font-size: 50px;
     font-weight: bold;
     margin-bottom: 65px;
+    position: relative;
+    top: -40px;
 }
 .skill-item{
     display: flex;
@@ -163,6 +168,80 @@ header ul li:hover{
     transform: rotate(-10deg);
 }
 /* --------------------skills------------------- */
+/*-------------------- projects----------------- */
+.My-Projects{
+    display: flex;
+    justify-content: center;
+    /* height: 700px; */
+}
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    border-radius: 10px;
+    background-color: #2fc176;
+}
+.projects h1{
+    color: white;
+    margin-bottom: 24px;
+    margin-top: 33px;
+    font-weight: bold;
+}
+.projects h5 {
+    color: white;
+}
+.projects a{
+    text-decoration: none;
+    color: #212121;
+}
+.project-items{
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 35px;
+    justify-items: center;
+    margin-bottom: 50px;
+    
+    
+    width: 100%;
+}
+.project-item{
+    height: 228px;
+    width: 403px;
+    position: relative;
+    
+    
+}
+.project-item img{
+    height: 228px;
+    width: 403px;
+    border-radius: 10px;
+}
+.text{
+    /* display: none; */
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    color: #2fc176;
+    height: 100%;
+    transition: .3s ease background-color;
+    border-radius: 10px;
+}
+.text p{
+    width: 70%;
+    color: #212121;
+}
+.project-item:hover .text{
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    
+}
+/*-------------------- projects----------------- */
 /* animations */
 @keyframes transition{
     from{
