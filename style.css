@@ -1,13 +1,23 @@
+/* -----------common---------- */
 body{
    
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     animation-name: transition;
     animation-duration: .3s;
+    background-color: #212121;
 }
+h1,p{
+    color: white;
+}
+/* -----------common---------- */
+
 /* -------------------header----------------------- */
 header{
     background-color: #2fc176;
+    position: sticky;
+    top: 0;
+    z-index: 5;
 }
 header img{
    display: none;
@@ -45,12 +55,18 @@ header ul li:hover{
     justify-content: center;
     align-items: center;
     margin-top: 150px;
+    margin-bottom: 220px;
 }
 .about-item{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.avatar{
+    animation-name: avatar;
+    animation-duration: 1s;
+
 }
 .about-item h1{
     font-size: 50px;
@@ -98,6 +114,55 @@ header ul li:hover{
     width: 27%;
 }
 /* ---------------------about------------------- */
+/* --------------------skills------------------- */
+.skills{
+    display: flex;
+    justify-content: center;
+}
+.skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2fc176;
+    width: 60%;
+    border-radius: 10px;
+}
+.skill-items{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.skill h1{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 65px;
+}
+.skill-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skill-item h6{
+    color: white;
+    font-weight: 900;
+}
+.skill-item img{
+    height: 100px;
+    width: 100px;
+    filter: brightness(0) invert(1);
+    transition: .3s ease;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.skill-item img:hover{
+    transform: scale(1.1);
+    filter: brightness(0) invert(0);
+    transform: rotate(-10deg);
+}
+/* --------------------skills------------------- */
 /* animations */
 @keyframes transition{
     from{
@@ -112,9 +177,11 @@ header ul li:hover{
 @keyframes about-item-h1{
     from{
         left: -1198px;
+        font-size: 0px;
     }
     to{
         left: 0;
+        font-size: 50px;
     }
 }
 @keyframes about-item-p{
@@ -123,6 +190,14 @@ header ul li:hover{
     }
     to{
         right: 0;
+    }
+}
+@keyframes avatar{
+    from{
+        transform: scale(0.0);
+    }
+    to{
+        transform: scale(1.0);
     }
 }
 
