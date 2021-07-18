@@ -226,7 +226,9 @@ header ul li:hover{
     color: #2fc176;
     height: 100%;
     transition: .3s ease background-color;
+    
     border-radius: 10px;
+    
 }
 .text p{
     width: 70%;
@@ -240,7 +242,9 @@ header ul li:hover{
     align-items: center;
     background-color: white;
     
+    
 }
+
 /*-------------------- projects----------------- */
 /* animations */
 @keyframes transition{
